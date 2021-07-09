@@ -48,7 +48,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<script>
-		/*
+		
 		$(function(){
 
 			//todays date
@@ -57,13 +57,13 @@
 			//get day
 			var day = today.getDay();
 
-			if( day > 4 && day <= 7 ){
+			/*if( day > 4 && day <= 7 ){
 				$('#content').html(`
 					<div class="alert alert-danger p-4">
 						Registration for this week has closed. Please try again on Monday for next week's registration.
 					</div>
 				`);
-			} else {
+			} else {*/
 
 				//get friday
 				var friday = 5;
@@ -75,10 +75,10 @@
 				}
 				var dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
 				$('#friday').html( fridayDate.toLocaleDateString('en-UK', dateOtions));
-			}
+			/*}*/
 
 		})	
-	*/
+	
 	</script>
   </body>
 </html>
